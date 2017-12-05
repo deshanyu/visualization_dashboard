@@ -2,9 +2,8 @@
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
-from sqlalchemy import create_engine, inspect, func
+from sqlalchemy import create_engine
 from flask import Flask, render_template, jsonify
-import json
 import pandas as pd
 
 engine = create_engine("sqlite:///belly_button_biodiversity.sqlite", echo=False)

@@ -19,46 +19,43 @@
 </head>
 <body>
     <br>
-    <div class="container" width: "800px">
+    <div class="container">
+        <div class="row">
         <!-- Jumbotron -->
-        <div class="jumbotron">
-            <h2 class='text-center'>Belly Button Biodiversity</h2>
-            <h2 class='text-center'>Dashboard</h2>
-            <h3 class='text-center'>Use the interactive charts below to explore the datasets</h3>
+        <div class="jumbotron col-md-12 text-center">
+            <h2>Belly Button Biodiversity Dashboard</h2>
+            <p>Use the interactive charts below to explore the datasets</p>
         </div>
-              
-        <div class='row'>
-            <div class="col-lg-2">
-              
-              <div class="jumbotron">
+        </div>
+        <div class='row col-md-offset-2'>
+            <div class="col-md-3">
+              <br>
+              <br>
+              <br>
+              <div class="well text-center">
                 <h5>SELECT Sample:</h5>              
-                <select id="selDataset" onchange="optionChanged(this.value)">
-                    
-                </select> 
+                <select id="selDataset" onchange="optionChanged(this.value)"></select> 
               </div>
                 
               <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Mrtadata Sample</h3>
+                            <h3 class="panel-title text-center">Metadata Sample</h3>
                         </div>
-                        <div class="panel-body" id="metadata">
-                                                
-                        </div>
+                        <div id="metadata" class="panel-body"></div>                     
               </div>
-      
             </div>  
             
-
-            <div class="col-lg-5" id="pie"></div>
-            <div class="col-lg-5" id="gauge"></div>
-            
+            <div class="col-md-5" id="pie"></div>   
         </div>       
         
-        <div id="bubble"></div>
-         
+        <div class="row">
+            <div class="col-md-12 border-box">
+                <div id="bubble"></div>
+            </div>
+        </div>
+        <br>
     </div>  
-    <script src="../static/index.js"></script>
-        
+    <script src="../static/index.js"></script>     
 </body>
 </html>
 
